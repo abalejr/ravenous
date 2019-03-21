@@ -13,7 +13,15 @@ const business = {
     category: 'Italian',
     rating: 4.5,
     reviewCount: 90
-};
+},
+      businesses = [
+          business,
+          business,
+          business,
+          business,
+          business,
+          business
+      ];
 
 class App extends Component {
     render() {
