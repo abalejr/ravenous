@@ -5,9 +5,17 @@ import SearchBar from './components/SearchBar/SearchBar';
 import Yelp from '../../util/Yelp';
 
 class App extends Component {
+    constructor(props) {
+        super(props);
+        this.state = { businesses: [] };
+
+        this.searchYelp = this.searchYelp.bind(this);
+    }
+    
     searchYelp(term, location, sortBy) {
         console.log('Search for: ' + term + ' in ' + location + ' and sort by: ' + sortBy);
     }
+
     render() {
         return (
             <div className="App">
