@@ -18,7 +18,7 @@ const apiKey = 'IIfryINT6bAM7XCyQ940Laqd0Np0M8LJvbDcABtwonwF4ge7odFIJx5jRhmQV4mH
                             city: business.location.city,
                             state: business.location.state,
                             zipCode: business.location.zip_code,
-                            category: business.categories[0],
+                            category: business.categories[0]['title'],
                             rating: business.rating,
                             reviewCount: business.review_count
                         };
